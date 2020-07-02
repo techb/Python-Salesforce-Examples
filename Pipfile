@@ -7,7 +7,7 @@ verify_ssl = true
 autopep8 = "*"
 
 [packages]
-simple-salesforce = "*"
+simple-salesforce = {editable = true, git = "https://github.com/simple-salesforce/simple-salesforce.git"}
 
 [requires]
 python_version = "3.7"
