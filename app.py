@@ -54,7 +54,7 @@ input("Script Paused...")
 
 
 # now lets get those records so we can delete them
-SOQL = format_soql("SELECT Id FROM Account WHERE Name LIKE '{:like}%'", "Bulk Test")
+SOQL = format_soql("SELECT Id, Name FROM Account WHERE Name LIKE '{:like}%'", "Bulk Test")
 the_accounts = sf.bulk.Account.query(SOQL)
 pprint(the_accounts)
 
