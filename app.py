@@ -44,7 +44,7 @@ input("Script Paused...")
 
 
 
-# insert the new account using the bulk api
+# insert the new accounts using the bulk api
 x = sf.bulk.Account.insert(data, batch_size=10000, use_serial=True)
 pprint(x)
 
